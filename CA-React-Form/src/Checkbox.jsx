@@ -10,7 +10,7 @@ function Checkbox(props) {
         <p>{sentence}</p>
         <div className="wrapper-checkbox">
           {labels.map((label, index) => (
-            <label key={index}>
+            <label key={index} className="checkbox-label">
               <input type="checkbox" id={`checkbox-${index}`} name={`checkbox-${index}`} required />
               {label}
             </label>
